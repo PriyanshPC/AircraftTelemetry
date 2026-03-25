@@ -9,7 +9,18 @@
     <File Path="shared/telemetry_packet.h" />
   </Folder>
   <Folder Name="/TelemetryData/" />
+  <Folder Name="/TelemetryData/Batch Files/">
+    <File Path="TelemetryData/Batch Files/EnduranceTest_Batch.txt" />
+    <File Path="TelemetryData/Batch Files/LoadTest_Batch.txt" />
+  </Folder>
+  <Folder Name="/TelemetryData/Data Files/">
+    <File Path="TelemetryData/Data Files/katl-kefd-B737-700.txt" />
+    <File Path="TelemetryData/Data Files/Telem_2023_3_12 14_56_40.txt" />
+    <File Path="TelemetryData/Data Files/Telem_2023_3_12 16_26_4.txt" />
+    <File Path="TelemetryData/Data Files/Telem_czba-cykf-pa28-w2_2023_3_1 12_31_27.txt" />
+  </Folder>
   <Folder Name="/TestScripts/" />
   <Project Path="Client/Client.vcxproj" Id="40a772f0-e559-4968-9680-24972dcac1af" />
+  <Project Path="DataProcessing/DataProcessing.vcxproj" Id="7fc0fe22-fea2-440d-a14f-4c23c754924f" />
   <Project Path="Server/Server.vcxproj" Id="4ce85a0b-aaf0-4459-8391-f4494e62f0e4" />
 </Solution>

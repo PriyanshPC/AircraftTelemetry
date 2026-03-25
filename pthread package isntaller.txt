@@ -1,0 +1,21 @@
+# Step 1 — Clone vcpkg
+cd C:\
+git clone https://github.com/microsoft/vcpkg.git
+
+# Step 2 — Bootstrap it
+cd C:\vcpkg
+.\bootstrap-vcpkg.bat
+
+# Step 3 — Integrate with Visual Studio (do this once ever)
+.\vcpkg integrate install
+
+# Step 4 — Install pthreads
+.\vcpkg install pthreads:x64-windows
+```
+
+The last command downloads and installs pthreads AND automatically configures it for every VS2022 project on your machine. After it finishes you can immediately write `#include <pthread.h>` in any project with zero additional configuration.
+
+The output will tell you it was successful:
+```
+pthreads:x64-windows is already installed
+-- Integrating pthreads into Visual Studio projects
