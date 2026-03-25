@@ -1,0 +1,15 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Docs/" />
+  <Folder Name="/shared/">
+    <File Path="shared/flight_record.h" />
+    <File Path="shared/telemetry_packet.h" />
+  </Folder>
+  <Folder Name="/TelemetryData/" />
+  <Folder Name="/TestScripts/" />
+  <Project Path="Client/Client.vcxproj" Id="40a772f0-e559-4968-9680-24972dcac1af" />
+  <Project Path="Server/Server.vcxproj" Id="4ce85a0b-aaf0-4459-8391-f4494e62f0e4" />
+</Solution>
