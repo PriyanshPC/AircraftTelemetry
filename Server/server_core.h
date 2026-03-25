@@ -6,8 +6,9 @@
  * Module 1 — Server Core
  * Owner: Priyansh
  *
- * Exposes the global mutex used by data_processing.cpp
- * and the client thread handler function signature.
+ * Exposes:
+ *   records_mutex  — global mutex used by DataProcessing module
+ *   handle_client  — pthread thread function, one per connected client
  */
 
 #ifndef _WIN32_WINNT
@@ -15,13 +16,12 @@
 #endif
 
 #include <winsock2.h>
-#include <ws2tcpip.h>
 #include <pthread.h>
 
  /* Global mutex — defined in server_core.cpp, used in data_processing.cpp */
 extern pthread_mutex_t records_mutex;
 
-/* Thread function — one instance runs per connected client */
+/* Thread function — one instance per connected client */
 void* handle_client(void* arg);
 
 #endif /* SERVER_CORE_H */

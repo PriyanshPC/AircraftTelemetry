@@ -125,12 +125,12 @@ void finalize_flight(uint32_t aircraft_id) {
     strftime(timestamp, sizeof(timestamp), "%Y-%m-%d %H:%M:%S", t);
 
     /* ── Print final summary ── */
-    printf("\n[DataProcessing] ══ Flight Complete ══════════════════\n");
+    printf("\n[DataProcessing] ++-------- Flight Complete --------++\n");
     printf("[DataProcessing]   Aircraft ID   : %u\n", rec.aircraft_id);
     printf("[DataProcessing]   Avg Fuel Burn : %.1f gal/hr\n", rec.avg_consumption);
     printf("[DataProcessing]   Duration      : %.0f sec\n", duration);
     printf("[DataProcessing]   Packets recvd : %d\n", rec.packet_count);
-    printf("[DataProcessing] ════════════════════════════════════════\n\n");
+    printf("[DataProcessing] ++-----------------------------------++\n");
 
     /* ── Append to CSV ── */
     FILE* f = fopen(OUTPUT_FILE, "a");

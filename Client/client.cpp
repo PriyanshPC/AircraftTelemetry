@@ -77,12 +77,12 @@ int main(int argc, char* argv[]) {
     /* ── Generate unique aircraft ID ── */
     uint32_t aircraft_id = (uint32_t)(GetCurrentProcessId() ^ (uint32_t)time(NULL));
 
-    printf("╔══════════════════════════════════════════╗\n");
-    printf("║  Aircraft Telemetry Client               ║\n");
-    printf("║  Aircraft ID : %-10u               ║\n", aircraft_id);
-    printf("║  Server      : %s:%-5d           ║\n", server_ip, server_port);
-    printf("║  Data file   : %-26s║\n", telem_file);
-    printf("╚══════════════════════════════════════════╝\n");
+    printf("++--------------------------------------------++\n");
+    printf("|| Aircraft Telemetry Client               ||\n");
+    printf("||  Aircraft ID : %-10u               ||\n", aircraft_id);
+    printf("||  Server      : %s:%-5d           ||\n", server_ip, server_port);
+    printf("||  Data file   : %-26s ||\n", telem_file);
+    printf("++--------------------------------------------++\n");
 
     /* ── Open telemetry file ── */
     FILE* fp = fopen(telem_file, "r");
