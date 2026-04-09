@@ -26,15 +26,12 @@
     <ClCompile Include="server_core.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Client\Client.vcxproj">
-      <Project>{40a772f0-e559-4968-9680-24972dcac1af}</Project>
-    </ProjectReference>
+    <ResourceCompile Include="Server.rc" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\DataProcessing\DataProcessing.vcxproj">
       <Project>{7fc0fe22-fea2-440d-a14f-4c23c754924f}</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Server.rc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
