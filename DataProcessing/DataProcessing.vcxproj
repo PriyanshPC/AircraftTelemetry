@@ -129,10 +129,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Server\data_processing.cpp" />
+    <ClCompile Include="data_processing.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Server\data_processing.h" />
+    <ClInclude Include="data_processing.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

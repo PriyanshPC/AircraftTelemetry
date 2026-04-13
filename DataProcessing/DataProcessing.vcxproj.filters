@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Server\data_processing.cpp">
+    <ClCompile Include="data_processing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Server\data_processing.h">
+    <ClInclude Include="data_processing.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
