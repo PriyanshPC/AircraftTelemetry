@@ -9,7 +9,7 @@ SET "SERVER_PORT=5000"
 SET "TELEM_FILE=katl-kefd-B737-700.txt"
 
 SET /A "index = 1"
-SET /A "count = 100"
+SET /A "count = 1000"
 
 :while
 @echo %time%
