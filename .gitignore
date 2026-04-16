@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Server/flight_records.csv
+/Report20260414-2240.diagsession
